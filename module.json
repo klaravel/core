@@ -1,0 +1,18 @@
+{
+    "name": "Core",
+    "alias": "core",
+    "description": "Core admin module. Please do not disable.",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Core\\Providers\\CoreServiceProvider",
+        "Modules\\Core\\Providers\\CoreRouteServiceProvider",
+        "Modules\\Core\\Providers\\CoreEventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "/Helpers/Autoload.php"
+    ],
+    "requires": []
+}
