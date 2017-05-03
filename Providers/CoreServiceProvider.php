@@ -52,6 +52,10 @@ class CoreServiceProvider extends ServiceProvider
             return $this->app->make('Modules\Core\Helpers\RouteHelper');
         });
 
+        // Register Middleware
+        $this->app['router']->middleware('ajax', '\Modules\Core\Http\Middleware\Ajax');
+        $this->app['router']->middleware('revalidate', '\Modules\Core\Http\Middleware\RevalidateBackHistory');
+        
         $this->registerAlias();
     }
 
