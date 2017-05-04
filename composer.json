@@ -1,5 +1,6 @@
 {
     "name": "klaravel/core",
+    "type": "laravel-module",
     "description": "",
     "authors": [
         {
